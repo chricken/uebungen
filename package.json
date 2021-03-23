@@ -1,0 +1,17 @@
+{
+  "name": "uebungen",
+  "version": "1.0.0",
+  "description": "Übungsaufgaben für den Kurs Javascript 2",
+  "main": "server.js",
+  "dependencies": {
+    "better-opn": "^2.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "C. Heisch",
+  "license": "ISC"
+}
