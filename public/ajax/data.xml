@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl'?>
+<questions>
+	<question>
+		Wer ist der Bürgermeister von Wesel?
+		<antwort>Esel</antwort>
+		<antwort>Wiesel</antwort>
+		<antwort>Bosel</antwort>
+		<antwort>Onkel Jürgen</antwort>
+		<correct>1</correct>
+	</question>
+	<question>
+		Was ist eine Farbe?
+		<antwort>Warm</antwort>
+		<antwort>Bunt</antwort>
+		<antwort>Rot</antwort>
+		<antwort>Onkel Jürgen</antwort>
+		<correct>3</correct>
+	</question>
+	<question>
+		Wieviele Fragen sind gut?
+		<antwort>1</antwort>
+		<antwort>2</antwort>
+		<antwort>3</antwort>
+		<antwort>4</antwort>
+		<correct>4</correct>
+	</question>
+	<question>
+		Macht Javascript Spaß?
+		<antwort>Ja</antwort>
+		<antwort>Natürlich</antwort>
+		<antwort>Immer</antwort>
+		<antwort>Uneingeschränkt</antwort>
+		<correct>3</correct>
+	</question>
+</questions>

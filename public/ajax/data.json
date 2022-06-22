@@ -1,0 +1,88 @@
+{
+    "questions": [
+        {
+            "question": "Wer ist der Bürgermeister von Wesel?",
+            "answers": [
+                {
+                    "antwort": "Esel",
+                    "true": true
+                },
+                {
+                    "antwort": "Wiesel",
+                    "true": false
+                },
+                {
+                    "antwort": "Bosel",
+                    "true": false
+                },
+                {
+                    "antwort": "Onkel Jürgen",
+                    "true": false
+                }
+            ]
+        },
+        {
+            "question": "Was ist eine Farbe?",
+            "answers": [
+                {
+                    "antwort": "Warm",
+                    "true": false
+                },
+                {
+                    "antwort": "Nein",
+                    "true": false
+                },
+                {
+                    "antwort": "Rot",
+                    "true": true
+                },
+                {
+                    "antwort": "Kaninchen",
+                    "true": false
+                }
+            ]
+        },
+        {
+            "question": "Wieviele Fragen sind gut?",
+            "answers": [
+                {
+                    "antwort": "1",
+                    "true": true
+                },
+                {
+                    "antwort": "2",
+                    "true": true
+                },
+                {
+                    "antwort": "3",
+                    "true": true
+                },
+                {
+                    "antwort": "4",
+                    "true": true
+                }
+            ]
+        },
+        {
+            "question": "Macht Javascript Spaß?",
+            "answers": [
+                {
+                    "antwort": "Ja",
+                    "true": true
+                },
+                {
+                    "antwort": "Natürlich",
+                    "true": true
+                },
+                {
+                    "antwort": "Immer",
+                    "true": true
+                },
+                {
+                    "antwort": "Uneingeschränkt",
+                    "true": true
+                }
+            ]
+        }
+    ]
+}
