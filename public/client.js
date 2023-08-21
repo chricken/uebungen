@@ -10,12 +10,14 @@ let ausgabe = document.querySelector('main');
 const paintContent = daten => {
     let index = localStorage.getItem('aufgabenIndex');
     ausgabe.innerHTML = '';
-
+    
     daten[index].parts.forEach((part, partIndex) => {
+
         let partDOM = dom.erzeugen({
             eltern: ausgabe,
             klassen: ['part']
         })
+
         // Part-Überschrift
         dom.erzeugen({
             eltern: partDOM,
@@ -26,6 +28,7 @@ const paintContent = daten => {
         })
 
         part.fragen.forEach((frage, frageIndex) => {
+            // console.log(frage);
             dom.templates.frage({
                 frage,
                 eltern: partDOM,
@@ -36,8 +39,8 @@ const paintContent = daten => {
                 refreshFunktion: paintContent
             })
         })
-        new ClipboardJS('.copyToClipboard');
 
+        new ClipboardJS('.copyToClipboard');
     })
 }
 
@@ -62,11 +65,13 @@ const paintLinks = daten => {
                 }
             },
             styles: {
+                /*
                 color: mathekram.zufallFarbeErzeugen({
                     hue: [40, 80],
                     sat: [40, 60],
                     val: [60, 80]
                 })
+                */
             }
         })
     })

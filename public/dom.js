@@ -4,10 +4,10 @@
 import op from './beoperationen.js';
 
 let dom = {
-    $(sel){
+    $(sel) {
         return document.querySelector(sel);
     },
-    $$(sel){
+    $$(sel) {
         return [...document.querySelectorAll(sel)];
     },
     erzeugen({
@@ -19,6 +19,7 @@ let dom = {
         value = false,
         attr = {},
         styles = {},
+        rndBG = false
     } = {}) {
         let neu = document.createElement(typ);
         if (klassen.length) neu.className = klassen.join(' ');
@@ -28,6 +29,9 @@ let dom = {
         Object.entries(listeners).forEach(listener => neu.addEventListener(...listener));
         Object.entries(attr).forEach(attribut => neu.setAttribute(...attribut));
         Object.entries(styles).forEach(style => neu.style[style[0]] = style[1]);
+
+        if (rndBG) neu.style.backgroundColor = `hsl(${~~(Math.random() * 360)},20%,90%)`;
+
         return neu;
     },
     templates: {
@@ -40,13 +44,17 @@ let dom = {
         } = {}) {
             let container = dom.erzeugen({
                 eltern,
-                klassen: ['fragenContainer', 'fragenContainerFE']
+                klassen: ['fragenContainer', 'fragenContainerFE'],
+                rndBG: true
             })
+
             dom.erzeugen({
                 eltern: container,
                 klassen: ['index', `skill${frage.schwierigkeit}`],
+               // inhalt: `<span class="smallText">${partIndex}</span>.${frageIndex}`
                 inhalt: `${partIndex}.${frageIndex}`
             })
+
             let f = frage.frage;
             f = f.split('\n').join('<br />');
             dom.erzeugen({

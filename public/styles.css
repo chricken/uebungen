@@ -14,7 +14,8 @@
     font-style: normal;
 }
 
-html, body {
+html,
+body {
     position: relative;
     padding: 0;
     margin: 0;
@@ -25,6 +26,10 @@ textarea {
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #000;
+}
+
+.smallText {
+    font-size: .75em;
 }
 
 header {
@@ -41,12 +46,12 @@ header {
 
 header a {
     position: relative;
-    display: inline;
-    /*float: left;*/
-    padding: 10px;
-    margin-right: 10px;
-    color: #fff;
+    display: inline-block;    
+    margin-right: 20px;    
     cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: rgba(255,255,255,.5);
 }
 
 header a::after {
@@ -55,16 +60,17 @@ header a::after {
 
 header a.aktiv {
     color: #fff !important;
-    font-size: 2em;
+    text-shadow: 0 0 5px #fff;
 }
 
 header a:hover {
-    color: rgb(185, 185, 199) !important;
+    color: #fff !important;
 }
 
 header a.aktiv:hover {
-    color: rgb(245, 181, 128) !important;
+    color: #fff !important;
 }
+
 
 header input.navLinks.aktiv {
     background-color: #ff0;
@@ -80,9 +86,11 @@ main .partHeader {
     font-size: 24px;
     margin-bottom: 10px;
     padding: 10px;
+    /*
     background: #eee;
-    color: #555;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    */
+    color: #555;
     font-weight: normal;
     font-family: roboto_condensedbold;
 }
@@ -93,30 +101,43 @@ main .fragenContainer {
     border-radius: 3px;
     padding: 10px;
     padding-bottom: 5px;
-    margin-bottom: 20px;
-    margin-left: 60px;
+    margin-bottom: 50px;
+    padding-left: 70px;
     min-height: 60px;
-    border: 1px solid hsla(0, 0%, 0%, 0.2);
+    border: 1px solid hsla(0, 0%, 0%, 0.3);
 }
 
 main .fragenContainer .index {
     position: absolute;
-    left: -60px;
+    left: 10px;
+    top: 0;
+    bottom: 0;
     width: 30px;
+    /*
     height: 25px;
+    border-radius: 0 0 50% 50%;
+    border: 1px solid hsla(0, 0%, 0%, 0.2);
+    border-top:none;
+    */
+    border-left: 1px solid hsla(0, 0%, 0%, 0.2);
+    border-right: 1px solid hsla(0, 0%, 0%, 0.2);
     padding: 5px;
     padding-top: 10px;
-    border-radius: 50%;
-    border: 1px solid hsla(0, 0%, 0%, 0.2);
+    padding-bottom: 5px;
     text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5)
 }
 
-main .fragenContainer h3, main .fragenContainer h4 {
+main .fragenContainer h3,
+main .fragenContainer h4 {
     color: hsla(0, 0%, 0%, 0.2);
     cursor: pointer;
 }
 
-main .fragenContainer h3:hover, main .fragenContainer h4:hover {
+main .fragenContainer h3:hover,
+main .fragenContainer h4:hover {
     color: hsla(0, 0%, 0%, 0.5);
 }
 
@@ -126,7 +147,7 @@ main .fragenContainer textarea {
 }
 
 main .fragenContainer .index.skill0 {
-    background: rgb(95, 231, 147);
+    background: rgba(0, 0, 0, .1);
 }
 
 main .fragenContainer .index.skill1 {
@@ -213,8 +234,9 @@ main .fragenContainer .index.skill2 {
     background-color: hsla(0, 0%, 100%, 1);
     border-radius: 5px;
     margin-bottom: 10px;
-    font-size: 10px;
+    font-size: 12px;
     white-space: break-spaces;
+    min-height: 15px;
 }
 
 .copyToClipboard {
