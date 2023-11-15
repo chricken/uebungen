@@ -49,8 +49,9 @@ const init = () => {
     ladeDatei('public/aufgaben.json').then(
         antwort => {
             daten = JSON.parse(antwort);
-            server.listen(80, err => console.log(err || 'Läuft'));
-            opn('http://localhost');
+            server.listen(8080, err => console.log(err || 'Läuft'));
+            opn('http://localhost:8080');
+            opn('http://localhost:8080/be');
         }
     ).catch(
         console.log
